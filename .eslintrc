@@ -1,0 +1,26 @@
+---
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2022 
+  jsx: true
+
+env:
+  node: true
+  jest: true
+
+extends:
+  - plugin:@typescript-eslint/recommended
+  - plugin:unicorn/recommended
+  - plugin:prettier/recommended
+
+rules:
+  '@typescript/non-empty-interface': off
+  
+  'unicorn/no-null': off
+
+  'unicorn/prevent-abbreviations':
+    - error
+    - replacements:
+        env: false
+        props: false
+        params: false
