@@ -10,12 +10,14 @@
 		"lint": "eslint . -f stylish --max-warnings 0"
 	},
 	"dependencies": {
+		"big.js": "^6.2.1",
 		"clsx": "^1.2.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
 		"@tsconfig/node16": "^1.0.3",
+		"@types/big.js": "^6.1.5",
 		"@types/react": "^18.0.17",
 		"@types/react-dom": "^18.0.6",
 		"@typescript-eslint/eslint-plugin": "^5.33.1",
