@@ -1,0 +1,24 @@
+---
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # :: Make sure that yarn is available in our environment.
+      - npm install -g yarn
+
+  pre_build:
+    commands:
+      # :: Installs application Node.js dependencies.
+      - yarn
+
+  build:
+    commands:
+      # :: Maps to the build process provided by the Vite bundler.
+      - yarn build
+
+# :: These define what are actually deployed after the build phase.
+artifacts:
+  base-directory: dist
+  files:
+    - '**/*'
