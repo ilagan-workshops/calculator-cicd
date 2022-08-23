@@ -4,7 +4,7 @@ export type CalculatorBrandingProps = {
 	//
 }
 
-const CalculatorBranding = (props?: CalculatorBrandingProps) => {
+const CalculatorBranding = () => {
 	return (
 		<div className='px-4 flex flex-row justify-between'>
 			<div className='font-mono font-black text-3xl text-slate-100 text-opacity-20'>TR-800</div>
